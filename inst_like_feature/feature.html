@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insta</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="feature.css">
+</head>
+
+<body>
+    <div class="card">
+        <img src="4.jpg" alt="">
+        <i class="ri-heart-fill"></i>
+    </div>
+
+    
+    <script>
+       let cad = document.querySelector(".card")
+       let like = document.querySelector("i")
+        cad.addEventListener("dblclick",function(){
+            like.style.transform = "scale(1.5)";
+            like.style.opacity = 1;
+            setTimeout(function(){
+                like.style.opacity = "0";
+            },1500)
+        })
+       
+    </script>
+</body>
+
+</html>
